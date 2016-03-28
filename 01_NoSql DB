@@ -1,0 +1,25 @@
+
+
+NoSql databases are in general not sql databases...
+
+NoSql databases are called all those databases that don't use queries to access data and they don't follow the same
+guidelines as the traditional relational databases which follow specific rules about schema-table standards.
+
+NoSql databases are divided to three categories (for now) :
+
+1) key-value store
+2) Document (Mongo is a documents Database)
+3) Graph databases
+
+
+
+Data Model      	        |   Performance|Scalability|Flexibility|Complexity|Functionality
+Key–Value    Store 	        |    high	       high	       high	       none	    variable (none)
+Column-Oriented Store	    |    high           high	 moderate	   low        minimal
+Document-Oriented Store	    |    high         variable     high	       low	    variable (low)
+Graph Database	            |    variable	  variable	   high	       high	    graph theory
+Relational Database	        |    variable	  variable	   low	     moderate	relational algebra
+
+
+The table above explains in a very low-level the main differences among the various Databases.
+

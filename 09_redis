@@ -1,0 +1,7 @@
+Redis is an extremely fast database that stores key-value sets.
+
+That enables us to store the session on redis and fire up multiple instances of our server with a balancer that will distribute
+the incoming requests to the various instances. The problem is that if there is client with a session that the server needs to
+access information about the user for example there is now guaranty that the balancer will allocate the same user to the
+same server instance. So a smart move would be to store the session in an external database so that any server can go and fetch
+the session from there, and redis is a very good choice to do that.

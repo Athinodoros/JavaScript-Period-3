@@ -1,0 +1,70 @@
+
+
+----------------- C R U D -----------------
+
+
+
+Create :
+
+to create a document in a collection you can use the simple insertOne() command :
+
+db.author.insertOne({name:"Athinodoros" ,lName : "Sgouromallis"});
+
+this command will add me in the author collection. But if we had an array of documents
+we could use the insert() command :
+
+db.author.insertOne([{name:"Athinodoros" ,lName : "Sgouromallis"},{name:"YourName" ,lName : "YourLastName"}]);
+this command would add both you and me.
+
+Read :
+
+to read documents from our collection we use the find command:
+
+db.author.find();
+this would return the whole list of documents in the authors collection.
+db.author.findOne();
+this will return the first document in the authors collection.
+
+we could also expand our demands like this :
+
+db.author.find({name:"Athinodoros"});
+this will return all the documents where the name equals to Athinodoros.
+
+There are tones of operators that help you point to a specific document but I'm not going to describe all of them here :)
+More info can be obtained here:   https://docs.mongodb.org/manual/core/read-operations-introduction/
+
+Update :
+
+Updating a document is also easy and can be done like this:
+
+db.collection.updateOne(
+  {name: "Athinodoros"},
+   {name: "Nos"},
+   {
+     upsert: true,
+     writeConcern: {name:"someOne"}
+   }
+)
+this command will find the entry with my name as the value for the name field and replace it with Nos
+BUT if I do not exist in the collection it will create one because I specified the upsert to be true.
+
+We can also use the set the $set operator to set new fields in a document like this:
+
+
+db.inventory.updateOne(
+      { "name" : "Athinodoros" },
+      { $set: { "languages" : ["Greek","JavaScript","Java","English"] } }
+   );
+
+This will find the first document matching the name Athinodoros and add the field languages resulting the document to have 3 fields
+the name the lName and an array which is the languages.
+
+Remove:
+
+db.authors.remove(
+   {name:Athinodoros},
+   {justOne:true}
+);
+
+this will find the first entry with my name and delete it. If we didn't specify the justOne as true it would delete all
+ documents with name set to Athinodoros.

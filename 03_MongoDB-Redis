@@ -1,0 +1,15 @@
+MongoDB is Document-oriented
+
+Instead of taking a business subject and breaking it up into multiple relational structures, MongoDB can store
+the business subject in the minimal number of documents. For example, instead of storing title and author
+information in two distinct relational structures, title, author, and other title-related information can
+all be stored in a single document called Book.
+
+
+Redis as described in redis.io
+
+Redis is high performance keu-value and data structure store that can be treated as memory.
+Any look-up has a big O notation of (n) and that makes it extremely fast as it indexes the hashed
+values of the key.
+
+We could think of Redis and other key-value databases as a HashMap.

@@ -1,0 +1,4 @@
+
+MongoDB is a schema-less database and that makes things kinda abstract. Mongoose adds a layer on top of mongoDB
+that allows you to add a model to your database. Mongoose doesn't add new functionality to your database but if
+a more structured database is needed it is essential to use.

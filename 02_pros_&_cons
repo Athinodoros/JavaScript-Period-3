@@ -1,0 +1,76 @@
+NoSql Databases have some pros and some cons. I will try to scratch the surface here knowing there are books
+that compare the "two" types of databases.
+
+PROS
+
+1) Less need for ETL
+
+NoSQL databases support storing data “as is.” Key value stores give you the ability to store simple data structures,
+whereas document NoSQL databases provide you with the ability to handle a range of flat or nested structures.
+Most of the data flying between systems does so as a message. Typically, the data takes one of these formats:XML,JSON,binary
+
+2) Support for unstructured text
+
+Being able to manage unstructured text greatly increases information and can help organizations make better decisions.
+For example, advanced uses include support for multiple languages with facetted search, snippet functionality,
+and word-stemming support. Advanced features also include support for dictionaries and thesauri.
+
+3) Ability to handle change over time
+
+Because of the schema agnostic nature of NoSQL databases, they’re very capable of managing change — you don’t have
+to rewrite ETL routines if the XML message structure between systems changes.
+
+4) No reliance on SQL magic
+
+Structured Query Language (SQL) is the predominant language used to query relational database management systems.
+Being able to structure queries so that they perform well has over the years become a thorny art.
+Complex multitable joins are not easy to write from memory.
+
+5) Ability to scale horizontally
+
+NoSQL databases handle partitioning (sharding) of a database across several servers.
+So, if your data storage requirements grow too much, you can continue to add inexpensive
+servers and connect them to your database cluster (horizontal scaling) making them work as a single data service.
+
+6) Functionality
+
+Bacause there is a number of NoSql databases and they have different functionality there is
+always one that suits you best, and all of them have different functionality than the standard Relational databases.
+
+7) Support for multiple data structures
+
+NoSQL databases provide support for a range of data structures.
+
+8) Speed
+
+Because NoSql databases does not have the need to join tables they tend to be much faster than relational databases.
+This enables the use of vast amount of data.
+
+More info about pros can be obtained here: http://www.dummies.com/how-to/content/10-advantages-of-nosql-over-rdbms.html
+
+CONS
+
+1) Less Mature
+
+In contrast, most of the NoSQL database alternatives have just barely made it out of the pre-production stages,
+and there are many important features that have not yet been implemented. It’s an exciting prospect for a developer
+to be teetering on the cutting edge of technology, but caution must be exercised to avoid any disastrous consequences.
+
+2) Less support
+
+Each NoSQL database in contrast tends to be open-source, with just one or two firms handling the support angle.
+Many of them have been developed by smaller startups which lack the resources to fund support on a global scale,
+and also the credibility that the established RDBMS vendors like Oracle, IBM and Microsoft enjoy.
+
+3) Business intelligence and analytics
+
+Simple queries require some programming knowledge, and the most common business intelligence tools that
+many enterprises rely on do not offer connectivity to NoSQL databases. However, this may be solved in time,
+seeing as some tools like PIG or HIVE have been created to offer ad-hoc query functionality for NoSQL databases.
+
+4) No common language
+
+Since NoSql databases come in variates they do not have a common language with which you could query your database.
+
+
+
